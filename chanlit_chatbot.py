@@ -17,7 +17,7 @@ async def start():
     )
 
     cl.user_session.set("agent", agent)
-    await cl.Message(content="Well Come To BlueShark World! Ask Anythin You Want.").send()
+    await cl.Message(content="WellCome To Blue-Shark World! Ask Anything You Want.").send()
     
 @cl.on_message
 async def main(message: cl.Message):
