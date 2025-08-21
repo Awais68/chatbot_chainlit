@@ -5,8 +5,10 @@ services:
     plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "chainlit run chanlit_chatbot.py --host 0.0.0.0 --port $PORT --headless"
-     envVars:
+    envVars:
       - key: PYTHON_VERSION
         value: 3.10
-      - key: PORT
-        value: 8000
+      - key: CHAINLIT_HOST
+        value: 0.0.0.0
+      - key: CHAINLIT_PORT
+        value: $PORT
